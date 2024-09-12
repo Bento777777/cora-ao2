@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Fofo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .card h1 {
+            color: #ff69b4;
+        }
+        .card p {
+            color: #333;
+        }
+        .card button {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .card button:hover {
+            background-color: #ff1493;
+        }
+        .surprise {
+            display: none;
+            margin-top: 20px;
+            color: #ff69b4;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Para Minha Namorada</h1>
+        <p>Você é a pessoa mais especial do mundo! e nunca se esqueça disso</p>
+        <button onclick="showSurprise()">Clique para uma surpresa</button>
+        <div class="surprise" id="surprise">
+            💖 Eu te amo meu momo! 💖
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
